@@ -6,7 +6,7 @@ const { exec } = require('child_process');
 
 app.get('/restart', function (req, res) {
   // Replace 'YOUR_COMMAND_HERE' with the actual command you want to run
-  const command = 'pm2 restart codeybot';
+  const command = 'pm2 restart cb';
 
   exec(command, (error, stdout, stderr) => {
     if (error) {
